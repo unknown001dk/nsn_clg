@@ -1,0 +1,44 @@
+footer {
+  background-color: aliceblue;
+}
+.footer-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.footer-col {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.footer-col p {
+  margin: 20px 0;
+  text-align: left;
+  max-width: 300px;
+}
+.footer-col ul li{
+  list-style-type: none;
+  margin: 5px;
+}
+.footer-col a {
+  color: #333;
+  text-decoration: none;
+}
+.footer-col h2 {
+  margin-bottom: 20px;
+}
+
+/* responsive design for mobile view and tab view */
+@media screen and (max-width: 850px) {
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-col {
+    margin-bottom: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  .footer-col h2 {
+    margin-bottom: 10px;
+  }
+}

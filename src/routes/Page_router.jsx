@@ -17,127 +17,127 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
-    path: '/Goals',
+    path: '/about/goals',
     element: <Goals />
   },
   {
-    path: '/objectives',
+    path: '/about/objectives',
     element: <Objectives />
   },
   {
-    path: '/Salient_feature',
+    path: '/about/Salient_feature',
     element: <Salient_feature />
   },
   {
-    path: '/specialties',
+    path: '/about/specialties',
     element: <Specialties />
   },
   {
-    path: '/vision',
+    path: '/about/vision',
     element: <Vision />
   },
   {
-    path: '/courses',
+    path: '/academics/courses',
     element: <Courses />
   },
   {
-    path: '/exam_cell',
+    path: '/academics/exam_cell',
     element: <Exam_cell />
   }, 
   {
-    path: '/dirctor',
+    path: '/administration/dirctor',
     element: <Director />
   },
   {
-    path: '/management',
+    path: '/administration/management',
     element: <Management />
   },
   {
-    path: '/principal',
+    path: '/administration/principal',
     element: <Principal />
   },
   {
-    path: '/Admission_form',
+    path: '/admission/Admission_form',
     element: <Admission_form />
   },
   {
-    path: '/eee',
+    path: '/department/BE/eee',
     element: <Eee />
   },
   {
-    path: '/civil',
+    path: '/department/BE/civil',
     element: <Civil />
   },
   {
-    path: '/cse',
+    path: '/department/BE/cse',
     element: <Cse />
   },
   {
-    path: '/ece',
+    path: '/department/BE/ece',
     element: <Ece />
   },
   {
-    path: '/mech',
+    path: '/department/BE/mech',
     element: <Mech />
   },
   {
-    path: '/it',
+    path: '/department/BTech/it',
     element: <IT />
   },
   {
-    path: '/aids',
+    path: '/department/BTech/aids',
     element: <AIDS />
   },
   {
-    path: '/industrial_safety',
+    path: '/department/ME/industrial_safety',
     element: <Industrial_safety />
   },
   {
-    path: '/structural',
+    path: '/department/ME/structural',
     element: <Structural />
   },
   {
-    path: '/laboratories',
+    path: '/facilities/laboratories',
     element: <Laboratories />
   },
   {
-    path: '/library',
+    path: '/facilities/library',
     element: <Library />
   }, 
   {
-    path: '/transport',
+    path: '/facilities/transport',
     element: <Transport />
   },
   {
-    path: '/computer_center',
+    path: '/facilities/computer_center',
     element: <Computer_center />
   },
   {
-    path: '/events',
+    path: '/gallery/events',
     element: <Events />
   },
   {
-    path: '/infrastructure',
+    path: '/gallery/infrastructure',
     element: <Infrastructure />
   },
   {
-    path: '/aicte_documents',
+    path: '/mandatory_doc/aicte_documents',
     element: <AICTE_documents />
   },
   {
-    path: '/extension_approvals',
+    path: '/mandatory_doc/extension_approvals',
     element: <Extension_approvals />
   },
   {
-    path: '/mandatory_disclosure',
+    path: '/mandatory_doc/mandatory_disclosure',
     element: <Mandatory_Disclosure />
   },
   {
-    path: '/industrial_relation',
+    path: '/placement/industrial_relation',
     element: <Industrial_relation />
   },
   {
-    path: '/placement_training',
+    path: '/placement/placement_training',
     element: <Placement_training />
   },
   {
