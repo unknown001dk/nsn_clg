@@ -1,60 +1,6 @@
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-nav {
-  height: 40px;
-  background-color: #333;
-  padding: 10px;
-}
-nav ul li {
-  list-style-type: none;
-}
-nav ul a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px;
-}
-.header {
-  padding: 10px;
-  display: flex;
-  gap: 10px;
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-toggle {
-  background-color: #f0f0f0;
-  padding: 5px;
-  border: 1px solid #ccc;
-  cursor: pointer;
-}
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  width: 150px;
-  left: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
-  list-style: none;
-  display: inline; 
-}
-.dropdown-menu li {
-  height: auto;
-  width: auto;
-  cursor: pointer;
-  padding: 10px;
-}
-.dropdown li a {
-  text-decoration: none;
-  color: #333;
-}
-.dropdown-menu li:hover {
-  background-color: #f0f0f0;
-}
-.dropdown.open .dropdown-menu {
-  display: block;
+:root {
+  --color: #fff;
+  --background-color-primary: black;
+  --background-color-first: #ffffffd3;
+  --text-first-color: #333;
 }

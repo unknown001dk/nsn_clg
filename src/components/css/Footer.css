@@ -10,10 +10,21 @@ footer {
   margin-bottom: 20px;
   padding: 20px;
 }
+.footer-col .text {
+  text-indent: 15px;
+  text-align: justify;
+}
 .footer-col p {
+  line-height: 1.5;
   margin: 20px 0;
   text-align: left;
   max-width: 300px;
+}
+.footer-col p span {
+  /* next line */
+  margin-top: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 .footer-col ul li{
   list-style-type: none;
@@ -22,6 +33,9 @@ footer {
 .footer-col a {
   color: #333;
   text-decoration: none;
+}
+.footer-col a:hover {
+  color: #007bff;
 }
 .footer-col h2 {
   margin-bottom: 20px;

@@ -8,19 +8,19 @@ function Footer() {
         <div className='footer-row'>
           <div className='footer-col'>
             <h2>NSN CET</h2>
-            <p>Our idea is to produce engineers with global competence and emotional stability who proactively respond to evolving social needs.</p>
+            <p className='text'>Our idea is to produce engineers with global competence and emotional stability who proactively respond to evolving social needs.</p>
           </div>
           <div className='footer-col'>
             <h2>Contact Us</h2>
             <ul className='contact-list'>
-              <li>Email: info@nsn.edu</li>
-              <li>Phone: +91 1234567890</li>
-              <li>Address: 123 Main St, City, State, Zip</li>
+              <li><strong>Email:</strong> info@nsn.edu</li>
+              <li><strong>Phone:</strong> +91 1234567890</li>
+              <li><strong>Address:</strong> 123 Main St, City, State, Zip</li>
             </ul>
           </div>
           <div className='footer-col'>
             <h2>Location</h2>
-            <p>N.S.N. Kalvi Nagar,karur - Madurai National Highways Manalmedu <span>Karur - 639 003</span> TamilNadu, India</p>
+            <p>N.S.N. Kalvi Nagar<span>karur - Madurai National Highways Manalmedu </span> <span>Karur - 639 003</span> TamilNadu, India</p>
           </div>
           <div className="footer-col">
             <h2>Quick Links</h2>

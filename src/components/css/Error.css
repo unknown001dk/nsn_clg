@@ -31,7 +31,7 @@
 	bottom: 6rem;
 	color: #9c9c9c;
 }
-.error button{
+.error .btn{
 	position: absolute;
 	bottom: 1rem;
 	background: rgba(8, 132, 221, 0.749);
@@ -42,18 +42,42 @@
 	border-radius: 15px;
   border: none;
 }
-.error button:hover {
+.error .btn:hover {
   background: rgba(8, 132, 221, 1);
 }
 
 /* Responsive */
-
+@media only screen and (max-width: 1080px) {
+  .error h2{
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .error h2{
+    font-size: 20px;
+  }
+	.error .btn{
+		position: absolute;
+		bottom: -15rem;
+		width: 80px;
+		background: rgba(8, 132, 221, 0.749);
+		padding: 10px;
+		color: #fff;
+		text-decoration: none ;
+		font-size: 14px;
+		border-radius: 10px;
+		border: none;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+}
 @media only screen and (max-width: 768px) {
   .error p{
     font-size: 5rem;
   }
   .error h2{
-    font-size: 25px;
+    font-size: 20px;
   }
   .error h5{
     font-size: 15px;
