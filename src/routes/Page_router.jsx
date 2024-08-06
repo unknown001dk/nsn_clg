@@ -1,13 +1,14 @@
 import { createBrowserRouter }  from 'react-router-dom';
 import { Suspense } from 'react';
 import {Principal} from './Lazy.jsx';
+import Preloader from '../utils/Preloader.jsx';
 import { Error, Home, AICTE_documents, Contact, Extension_approvals, Mandatory_Disclosure, Infrastructure, Events, Admission_form, Industrial_relation, Placement_training, Goals, Salient_feature, Objectives, Specialties, Vision, Courses, Exam_cell, Director, Management, Eee, Civil, Cse, Ece, Mech, IT, AIDS, Industrial_safety, Structural, Laboratories, Library, Transport, Computer_center } from './Lazy.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Home />
       </Suspense>
     )
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
   {
     path: '/contact',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Contact />
       </Suspense>
     )
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
   {
     path: '/about/goals',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Goals />
       </Suspense>
     )
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
   {
     path: '/about/objectives',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Objectives />
       </Suspense>
     )
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
   {
     path: '/about/Salient_feature',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Salient_feature />
       </Suspense>
     )
@@ -47,7 +48,7 @@ const router = createBrowserRouter([
   {
     path: '/about/specialties',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Specialties />
       </Suspense>
     )
@@ -55,7 +56,7 @@ const router = createBrowserRouter([
   {
     path: '/about/vision',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Vision />
       </Suspense>
     )
@@ -63,7 +64,7 @@ const router = createBrowserRouter([
   {
     path: '/academics/courses',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Courses />
       </Suspense>
     )
@@ -71,7 +72,7 @@ const router = createBrowserRouter([
   {
     path: '/academics/exam_cell',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Exam_cell />
       </Suspense>
     )
@@ -79,7 +80,7 @@ const router = createBrowserRouter([
   {
     path: '/administration/dirctor',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Director />
       </Suspense>
     )
@@ -87,7 +88,7 @@ const router = createBrowserRouter([
   {
     path: '/administration/management',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Management />
       </Suspense>
     )
@@ -95,7 +96,7 @@ const router = createBrowserRouter([
   {
     path: '/administration/principal',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Principal />
       </Suspense>
     )
@@ -103,7 +104,7 @@ const router = createBrowserRouter([
   {
     path: '/admission/Admission_form',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Admission_form />
       </Suspense>
     )
@@ -111,7 +112,7 @@ const router = createBrowserRouter([
   {
     path: '/department/BE/eee',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Eee />
       </Suspense>
     )
@@ -119,7 +120,7 @@ const router = createBrowserRouter([
   {
     path: '/department/BE/civil',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Civil />
       </Suspense>
     )
@@ -127,7 +128,7 @@ const router = createBrowserRouter([
   {
     path: '/department/BE/cse',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Cse />
       </Suspense>
     )
@@ -135,7 +136,7 @@ const router = createBrowserRouter([
   {
     path: '/department/BE/ece',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Ece />
       </Suspense>
     )
@@ -143,7 +144,7 @@ const router = createBrowserRouter([
   {
     path: '/department/BE/mech',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Mech />
       </Suspense>
     )
@@ -151,7 +152,7 @@ const router = createBrowserRouter([
   {
     path: '/department/BTech/it',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <IT />
       </Suspense>
     )
@@ -159,7 +160,7 @@ const router = createBrowserRouter([
   {
     path: '/department/BTech/aids',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <AIDS />
       </Suspense>
     )
@@ -167,7 +168,7 @@ const router = createBrowserRouter([
   {
     path: '/department/ME/industrial_safety',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Industrial_safety />
       </Suspense>
     )
@@ -175,7 +176,7 @@ const router = createBrowserRouter([
   {
     path: '/department/ME/structural',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Structural />
       </Suspense>
     )
@@ -183,7 +184,7 @@ const router = createBrowserRouter([
   {
     path: '/facilities/laboratories',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Laboratories />
       </Suspense>
     )
@@ -191,7 +192,7 @@ const router = createBrowserRouter([
   {
     path: '/facilities/library',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Library />
       </Suspense>
     )
@@ -199,7 +200,7 @@ const router = createBrowserRouter([
   {
     path: '/facilities/transport',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Transport />
       </Suspense>
     )
@@ -207,7 +208,7 @@ const router = createBrowserRouter([
   {
     path: '/facilities/computer_center',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Computer_center />
       </Suspense>
     )
@@ -215,7 +216,7 @@ const router = createBrowserRouter([
   {
     path: '/gallery/events',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Events />
       </Suspense>
     )
@@ -223,7 +224,7 @@ const router = createBrowserRouter([
   {
     path: '/gallery/infrastructure',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Infrastructure />
       </Suspense>
     )
@@ -231,7 +232,7 @@ const router = createBrowserRouter([
   {
     path: '/mandatory_doc/aicte_documents',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <AICTE_documents />
       </Suspense>
     )
@@ -239,7 +240,7 @@ const router = createBrowserRouter([
   {
     path: '/mandatory_doc/extension_approvals',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Extension_approvals />
       </Suspense>
     )
@@ -247,7 +248,7 @@ const router = createBrowserRouter([
   {
     path: '/mandatory_doc/mandatory_disclosure',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Mandatory_Disclosure />
       </Suspense>
     )
@@ -255,7 +256,7 @@ const router = createBrowserRouter([
   {
     path: '/placement/industrial_relation',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Industrial_relation />
       </Suspense>
     )
@@ -263,7 +264,7 @@ const router = createBrowserRouter([
   {
     path: '/placement/placement_training',
     element: (
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Preloader />}>
         <Placement_training />
       </Suspense>
     )
