@@ -1,13 +1,14 @@
 import { RouterProvider }  from 'react-router-dom';
-import router from './routes/Page_router'
 import { Header, Footer } from './components/inc.jsx';
-import DropdownMenu from './s/Hda.jsx';
+import { ToastContainer } from 'react-toastify';
+import router from './routes/Page_router'
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <>
+      <ToastContainer />
       <Header/>
-      {/* <DropdownMenu /> */}
       <RouterProvider router={router} />
       <Footer />
     </>

@@ -157,7 +157,10 @@ section {
     box-shadow: none;
   }
   .form-inputs input {
-    width: 90%;
+    width: 98%;
     margin-bottom: 30px;
+  }
+  .form-inputs textarea {
+    width: 98%;
   }
 }
