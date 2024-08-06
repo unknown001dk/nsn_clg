@@ -1,6 +1,7 @@
 import { createBrowserRouter }  from 'react-router-dom';
 import { Suspense } from 'react';
-import { Error, Home, AICTE_documents, Contact, Extension_approvals, Mandatory_Disclosure, Infrastructure, Events, Admission_form, Industrial_relation, Placement_training, Goals, Salient_feature, Objectives, Specialties, Vision, Courses, Exam_cell, Director, Management, Principal, Eee, Civil, Cse, Ece, Mech, IT, AIDS, Industrial_safety, Structural, Laboratories, Library, Transport, Computer_center } from './Lazy.jsx';
+import {Principal} from './Lazy.jsx';
+import { Error, Home, AICTE_documents, Contact, Extension_approvals, Mandatory_Disclosure, Infrastructure, Events, Admission_form, Industrial_relation, Placement_training, Goals, Salient_feature, Objectives, Specialties, Vision, Courses, Exam_cell, Director, Management, Eee, Civil, Cse, Ece, Mech, IT, AIDS, Industrial_safety, Structural, Laboratories, Library, Transport, Computer_center } from './Lazy.jsx';
 
 const router = createBrowserRouter([
   {
