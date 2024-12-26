@@ -1,9 +1,39 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { departmentsData } from "../../data/departmentsData.js";
+// import { departmentsData } from "../../data/departmentsData.js";
 import "./DepartmentPage.css";
 
 const DepartmentPage = () => {
+  const departmentsData = {
+    "Mechanical Engineering": {
+      description: `The department was established in 2011...`,
+      image: "https://via.placeholder.com/300",
+      cards: [
+        {
+          title: "VISION",
+          content: "To impart futuristic technical education...",
+        },
+        {
+          title: "MISSION",
+          content: "To create an environment fostering growth...",
+        },
+      ],
+    },
+    "Civil Engineering": {
+      description: `Civil Engineering involves designing...`,
+      image: "https://via.placeholder.com/300",
+      cards: [
+        {
+          title: "VISION",
+          content: "To construct sustainable infrastructure...",
+        },
+        {
+          title: "MISSION",
+          content: "Focus on environmental impact...",
+        },
+      ],
+    },
+  };
   const { departmentName } = useParams(); // Get department name from the URL
   const department = departmentsData[departmentName];
 
