@@ -1,0 +1,124 @@
+/* General container styling */
+.request-list-container {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.request-list-container header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.request-list-container h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0;
+}
+
+/* Table styles */
+.request-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.request-table th,
+.request-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.request-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.request-table tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.request-table tbody tr:hover {
+  background-color: #e0f7fa;
+}
+
+/* Button styles */
+.accept-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.accept-btn:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.reject-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.reject-btn:disabled {
+  background-color: #ef9a9a;
+  cursor: not-allowed;
+}
+
+.download-btn {
+  margin-top: 10px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+/* Responsive table styles */
+@media (max-width: 768px) {
+  .request-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .request-table th,
+  .request-table td {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .request-list-container h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .accept-btn,
+  .reject-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .request-list-container {
+    padding: 10px;
+  }
+}

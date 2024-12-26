@@ -1,0 +1,97 @@
+/* Base styles */
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.transport-officers {
+  padding: 20px;
+  background: linear-gradient(to bottom, #e8f5e9, #f1f8e9); /* Light green gradient */
+  color: #333;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1b5e20; /* Dark green for the theme */
+  margin-bottom: 15px;
+}
+
+.page-description {
+  font-size: 1.2rem;
+  color: #4e4e4e;
+  margin-bottom: 30px;
+}
+
+/* Officer cards container */
+.officer-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Individual card styles */
+.officer-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.officer-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image-wrapper {
+  height: 200px;
+  overflow: hidden;
+}
+
+.officer-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Officer details */
+.officer-details {
+  padding: 15px;
+  text-align: left;
+}
+
+.officer-details h3 {
+  font-size: 1.5rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.officer-details .role {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.officer-details .contact,
+.officer-details .email {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .officer-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .officer-card {
+    width: 90%;
+  }
+}

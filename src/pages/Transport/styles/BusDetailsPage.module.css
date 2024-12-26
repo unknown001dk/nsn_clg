@@ -1,0 +1,206 @@
+.busDetailsPage {
+  padding: 20px;
+  font-family: 'Poppins', Arial, sans-serif; /* Modern font */
+  color: #333;
+  background: linear-gradient(to bottom right, #e8f5e9, #c8e6c9); /* Soft gradient */
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+h1 {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 2rem;
+}
+
+.backBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Button shadow */
+}
+
+.backBtn:hover {
+  background-color: #388e3c;
+  transform: translateY(-3px); /* Subtle lift effect */
+}
+
+.detailsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Increased gap for a cleaner layout */
+}
+
+.leftContent {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Card-like appearance */
+}
+
+.leftContent img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.leftContent img:hover {
+  transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+.leftContent h2 {
+  font-size: 1.5rem;
+  color: #388e3c;
+}
+
+.leftContent p {
+  line-height: 1.6;
+}
+
+.rightContent {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Card-like appearance */
+}
+
+.rightContent h3 {
+  color: #2e7d32;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.stopsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: #f9fbe7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the table */
+}
+
+.stopsTable th,
+.stopsTable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.stopsTable th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.stopsTable tr:nth-child(even) {
+  background-color: #f1f8e9;
+}
+
+.stopsTable tr:hover {
+  background-color: #c8e6c9; /* Light green hover effect */
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e7d32;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+.contactDetails {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f1f8e9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactItem {
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.contactItem:hover {
+  background: #f7f7f7;
+}
+
+.contactHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-right: 10px;
+  color: #4caf50;
+}
+
+.caretIcon {
+  font-size: 1rem;
+}
+
+.contactDetailsBody {
+  margin-top: 10px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  line-height: 1.6;
+}
+
+.gap {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.emergencyCard {
+  margin-top: 20px;
+  background-color: #e8ffe6;
+  border-radius: 10px 20px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.memberBtn ,.registerBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Button shadow */
+}
+
+.memberBtn:hover , .registerBtn:hover{
+  background-color: #388e3c;
+  transform: translateY(-3px); /* Subtle lift effect */
+}

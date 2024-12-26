@@ -1,0 +1,151 @@
+/* Main Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Back Button */
+.backButton {
+  align-self: flex-start;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #357ab8;
+}
+
+/* Form Wrapper */
+.formWrapper {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Image Container */
+.imageContainer {
+  flex: 1;
+  text-align: center;
+}
+
+.collegeImage {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Container */
+.formContainer {
+  flex: 1;
+  background-color: #e8f5e9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b5e20;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.address {
+  text-align: center;
+  font-size: 14px;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.formTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Input Fields and Groups */
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputGroup label {
+  display: block;
+  font-size: 14px;
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c8e6c9;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-color: #4caf50;
+}
+
+.inputGroup textarea {
+  resize: none;
+}
+
+/* Submit Button */
+.submitButton {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #388e3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .formWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageContainer {
+    margin-bottom: 20px;
+  }
+
+  .collegeImage {
+    max-width: 100%;
+  }
+
+  .formContainer {
+    width: 100%;
+    max-width: 500px;
+  }
+}

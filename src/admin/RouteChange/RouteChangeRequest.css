@@ -1,0 +1,118 @@
+/* General container styles */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #2e7d32; /* Green color */
+  text-align: center;
+}
+
+/* Search input styles */
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid #2e7d32; /* Green border */
+  border-radius: 5px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Table wrapper for responsiveness */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* Responsive table styles */
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.responsive-table th {
+  background-color: #4caf50; /* Darker green for header */
+  color: white;
+}
+
+.responsive-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.responsive-table tr:hover {
+  background-color: #d7ffd9; /* Light green hover effect */
+}
+
+/* For small screens */
+@media (max-width: 600px) {
+  .responsive-table th,
+  .responsive-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #2e7d32; /* Green border */
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  background-color: #f0f0f0;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #d7ffd9; /* Light green hover effect */
+}
+
+.pagination button.active {
+  background-color: #4caf50; /* Green background for active page */
+  color: white;
+}
+
+/* Add this CSS to style the print button */
+.print-button {
+  background-color: #4CAF50; /* Green background */
+  color: white;              /* White text */
+  font-size: 16px;           /* Font size */
+  padding: 10px 20px;        /* Padding for the button */
+  border: none;              /* Remove border */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  /* margin-right: 20px; */
+}
+
+.print-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* For positioning the print button (you can adjust based on your layout) */
+.print-button {
+  /* margin: 20px 0; */
+  margin-right: 20px;
+  display: inline-block;
+}

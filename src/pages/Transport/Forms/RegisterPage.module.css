@@ -1,0 +1,226 @@
+/* Base container */
+.registerPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eeeeee;
+  /* background: linear-gradient(90deg, #58cced, #58d36e); */
+  padding-bottom: 60px; /* Add space for the footer */
+  box-sizing: border-box;
+}
+
+/* Main container for content */
+.registerContainer {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Ensure content wraps on small screens */
+}
+
+/* Left Section */
+.registerLeft {
+  flex: 1;
+  background: #4cb25d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.registerLeft h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.logoImage {
+  width: 100px;
+  margin: 20px 0;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* Right Section */
+.registerRight {
+  flex: 2;
+  padding: 20px;
+  min-height: 300px; /* Ensure enough space for the form content */
+}
+
+.registerRight h2 {
+  text-align: center;
+  color: #2a2a72;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+}
+
+.formRow div {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+input:focus, select:focus {
+  border-color: #58d36e;
+  outline: none;
+}
+
+/* Submit Button */
+.submitButton {
+  background: #58d36e;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background: #4cb25d;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust the main container layout */
+  .registerContainer {
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+    overflow: visible; /* Ensure content doesn't get cut off */
+  }
+
+  /* Left section adjustments */
+  .registerLeft {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .registerLeft h1 {
+    font-size: 1.8rem;
+  }
+
+  .logoImage {
+    width: 80px;
+  }
+
+  .backButton {
+    font-size: 1.2rem;
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  /* Right section adjustments */
+  .registerRight {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .registerRight h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Form styling for smaller screens */
+  .registerForm {
+    gap: 15px;
+  }
+
+  .formRow {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .formRow div {
+    flex: none;
+    width: 100%;
+  }
+
+  /* Input and button adjustments for mobile */
+  input, select, .submitButton {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .submitButton {
+    padding: 12px;
+  }
+}
+
+/* For very small screens (mobile phones in portrait mode) */
+@media (max-width: 480px) {
+  .registerLeft h1 {
+    font-size: 1.5rem;
+  }
+
+  .registerRight h2 {
+    font-size: 1.3rem;
+  }
+
+  .logoImage {
+    width: 70px;
+  }
+
+  .backButton {
+    font-size: 1rem;
+  }
+
+  .submitButton {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+}

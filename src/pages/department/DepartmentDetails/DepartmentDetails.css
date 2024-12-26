@@ -1,0 +1,94 @@
+:root {
+  --main-green: #4caf50; /* Primary green color */
+  --dark-green: #388e3c; /* Darker shade for hover effects */
+  --light-green: #e8f5e9; /* Light background for contrast */
+  --text-color: #ffffff; /* White text for better visibility */
+  --text-dark: #1b5e20; /* Dark green for text */
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.department-page {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.department-header {
+  background-color: var(--main-green);
+  padding: 1rem 2rem;
+}
+
+.department-details-container {
+  margin: 2rem;
+  text-align: center;
+}
+
+.department-details-container h2 {
+  color: var(--main-green);
+  font-size: 1.8rem;
+}
+
+.department-details-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.department-not-found {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.department-not-found h2 {
+  color: var(--dark-green);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .department-header {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack navigation links */
+    gap: 1rem;
+  }
+
+  .nav-links li {
+    font-size: 0.9rem;
+  }
+
+  .department-details-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .department-details-container p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .department-header {
+    padding: 0.5rem;
+  }
+
+  .nav-links li {
+    font-size: 0.8rem;
+  }
+
+  .department-details-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .department-details-container p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,82 @@
+:root {
+  --main-green: #4caf50; /* Primary green color */
+  --dark-green: #388e3c; /* Darker shade for hover effects */
+  --light-green: #e8f5e9; /* Light background for contrast */
+  --text-color: #ffffff; /* White text for better visibility */
+  --text-dark: #1b5e20; /* Dark green for text */
+}
+
+/* Header Wrapper */
+.header {
+  background-color: var(--main-green);
+  padding: 10px 0;
+  position: sticky; /* Keeps header fixed at the top */
+  top: 0;
+  z-index: 1000;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-start; /* Align links to the start */
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.nav-links li {
+  font-size: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  color: var(--light-green);
+  background-color: var(--dark-green);
+}
+
+/* Scrollbar Styling */
+.header::-webkit-scrollbar {
+  height: 6px; /* Thin scrollbar */
+}
+
+.header::-webkit-scrollbar-thumb {
+  background-color: var(--dark-green); /* Matches the theme */
+  border-radius: 10px;
+}
+
+.header::-webkit-scrollbar-thumb:hover {
+  background-color: var(--main-green);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links li {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .nav-links li {
+    font-size: 0.8rem;
+  }
+}

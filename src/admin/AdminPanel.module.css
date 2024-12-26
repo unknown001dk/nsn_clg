@@ -1,0 +1,100 @@
+/* General Styling */
+.adminContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.adminHeader {
+  background-color: #256c2a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.adminHeader h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.adminHeader p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Main Content Layout */
+.adminMain {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.adminSidebar {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  width: 200px;
+}
+
+.adminSidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.adminSidebar nav li {
+  margin: 10px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.adminSidebar nav li:hover {
+  color: #17a2b8;
+}
+
+/* Content Area */
+.adminContent {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards Section */
+.adminCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Activity List */
+.activityList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.activityList li {
+  padding: 8px 0;
+  /* border-bottom: 1px solid #e0e0e0; */
+}

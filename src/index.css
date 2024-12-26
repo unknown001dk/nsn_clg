@@ -1,10 +1,19 @@
 :root {
-  --color: #fff;
-  --background-color-primary: black;
-  --background-color-first: #ffffffd3;
-  --text-first-color: #333;
-  --border-color-first: rgba(122, 122, 122, 0.68);
+  --main-green: #4caf50; /* Primary Green */
+  --teal: #00897b; /* Secondary Teal */
+  --light-beige: #fdf9f3; /* Soft Background */
+  --gray-bg: #f5f5f5; /* Light Gray Background */
+  --dark-gray: #444444; /* Text Color */
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --hover-green: rgba(76, 175, 80, 0.2); /* Green Hover Effect */
 }
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
 .contact-flex {
   display: flex;
   justify-content: center;
@@ -15,6 +24,8 @@
   margin-bottom: 30px;
 }
 .contact-info {
+  width: 500px;
+  height: 300px;
   font-size: 18px;
   background-color: white;
   padding: 20px;
@@ -24,11 +35,12 @@
 }
 .contact-info h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: rgba(238, 130, 238, 0.534);
 }
 .contact-info p {
-  text-align: justify;
-  margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .contact-msg {
   background-color: var(--background-color-first);
@@ -70,7 +82,7 @@
   outline: none;
   cursor: pointer;
 }
- .contact-msg button:hover {
+.contact-msg button:hover {
   background-color: rgba(139, 0, 0, 0.676);
 }
 .contact-msg span, b {
@@ -123,4 +135,21 @@
     opacity: 0.1;
     transform: translate3d(0, -16px, 0);
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 206, 206, 0.1);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(247, 192, 133, 0.5);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }

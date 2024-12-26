@@ -1,10 +1,16 @@
 * {box-sizing: border-box;}
-.topnav {
+header {
   overflow: hidden;
   background-color: #ffffffd4;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
+}
+/* .topnav {
+  
+} */
+.menu-icon {
+  display: none;
 }
 
 .topnav a {
@@ -22,10 +28,10 @@
   transition: all .5s ease-in-out;
 }
 
-/* .topnav a.active {
+.active {
   background-color: #2196F3;
   color: white;
-} */
+}
 
 .topnav .search-container {
   float: right;
@@ -56,9 +62,23 @@
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  .menu-icon button {
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+  }
   .topnav {
     /* float: right; */
+    margin-top: 50px;
     display: block;
     align-items: center;
     justify-content: center;

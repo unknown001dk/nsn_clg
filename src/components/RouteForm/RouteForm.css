@@ -1,0 +1,66 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+.form {
+  width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+p {
+  margin: 8px 0;
+}
+
+.inner-text {
+  margin-left: 20px;
+}
+
+.text-center {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.signatures {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.signatures p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.flex div:first-child p {
+  margin: 5px 0;
+}
+
+/* Letter-specific styles */
+.form p:first-child {
+  margin-top: 0;
+}
+
+.form span {
+  display: block;
+  margin: 20px 0;
+}
+
+.inner-text p {
+  margin: 5px 0;
+}

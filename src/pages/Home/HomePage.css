@@ -1,0 +1,411 @@
+h1, h2, h3 {
+  color: #333;
+  font-weight: bold;
+  text-align: center; /* Center-align all headers */
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #4caf50;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  /* display: flex; */
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(45deg, #4caf50, #8bc34a);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  /* display: flex; */
+}
+
+.hero:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/hero-bg.jpg') no-repeat center/cover;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero .btn {
+  background: white;
+  color: #4caf50;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.hero .btn:hover {
+  background: #8bc34a;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about h2::after {
+  content: '';
+  display: block;
+  margin: 10px auto;
+  width: 60px;
+  height: 4px;
+  background: #4caf50;
+}
+
+.about p {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Vision & Mission Section */
+.vision-mission {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #4caf50, #8bc34a);
+  color: white;
+  text-align: center;
+}
+
+.vision-mission h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.vision-mission-content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.vision-mission-content div {
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Principal's Message */
+.principal-message {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+  font-style: italic;
+}
+
+.principal-message p {
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.principal-message strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #4caf50;
+}
+
+/* Departments Section */
+.departments {
+  padding: 60px 20px;
+  background: white;
+}
+
+.department-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.department-card {
+  background: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.department-card:hover {
+  transform: scale(1.1);
+  background: #8bc34a;
+}
+
+/* Alumni Achievements Section */
+.alumni-achievements {
+  padding: 40px 20px;
+  background-color: #f4f4f4;  /* Light background color */
+  text-align: center;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+.alumni-achievements h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;  /* Dark color for the heading */
+  margin-bottom: 20px;
+}
+
+.alumni-achievements p {
+  font-size: 1.1rem;
+  color: #7f8c8d;  /* Subtle grey text for the description */
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+.achievement-grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  /* margin-top: 10px; */
+}
+
+.achievement-card {
+  background-color: #ffffff;  /* White background for each card */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.achievement-card p {
+  font-size: 1rem;
+  color: #34495e;  /* Slightly darker grey for the description */
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);  /* Lift the card slightly on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Darker shadow on hover */
+}
+
+/* Events Section */
+.events {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.event-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: box-shadow 0.3s;
+}
+
+.event-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Photo Gallery */
+.photo-gallery {
+  padding: 60px 20px;
+  text-align: center;
+  background: #4caf50;
+  color: white;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Basic fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Common scroll animation class */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px); /* Start slightly lower */
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+/* When the element is in the viewport (added class 'show') */
+.scroll-animate.show {
+  opacity: 1;
+  transform: translateY(0); /* Move to normal position */
+}
+
+@media(max-width: 480px) {
+  .hero {
+    padding: 20px 30px;
+    font-size: 15px;
+  }
+  .hero h1 {
+    font-size: 35px;
+  }
+  .btn {
+    margin-bottom: 20px;
+  }
+  .departments h2{
+    margin-bottom: 10px;
+  }
+  .department-card {
+    margin-top: 10px;
+  }
+  .achievement-card {
+    margin-bottom: 20px;
+  }
+  .events h2 {
+    margin-bottom: 10px;
+  }
+  .event-card {
+    margin-top: 10px;
+    width: 90%;
+  }
+  .testimonials h2 {
+    margin-bottom: 20px;
+  }
+  .testimonial-card {
+    width: 90%;
+  }
+}

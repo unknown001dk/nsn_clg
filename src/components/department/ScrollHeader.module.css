@@ -1,0 +1,79 @@
+.department-header {
+  background-color: #4caf50; /* Primary green */
+  padding: 10px 0;
+  position: sticky; /* Sticky header */
+  top: 0;
+  z-index: 1000;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0 10px;
+  justify-content: flex-start; /* Align links to the start */
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.nav-links li {
+  font-size: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #388e3c; /* Darker green */
+  color: #e8f5e9; /* Light green for contrast */
+}
+
+.nav-links a.active {
+  background-color: #2e7d32; /* Active page highlight */
+  color: white;
+}
+
+/* Scrollbar Styling */
+.department-header::-webkit-scrollbar {
+  height: 6px; /* Thin scrollbar */
+}
+
+.department-header::-webkit-scrollbar-thumb {
+  background-color: #388e3c; /* Matches the theme */
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.department-header::-webkit-scrollbar-thumb:hover {
+  background-color: #4caf50;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links li {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-links {
+    gap: 0.5rem;
+  }
+
+  .nav-links li {
+    font-size: 0.8rem;
+  }
+}

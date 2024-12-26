@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 45px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo img {
+  float: left;
+  max-width: 35px;
+  opacity: 0.8; 
+}
+
+.text-content {
+  text-align: center;
+  z-index: 2;
+}
+
+.title-1 {
+  color: orangered;
+  font-size: 2em;
+  margin: 0;
+}
+
+.title-2 {
+  color: green;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.card-container {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 50%; /* Cards area within the background video */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.card {
+  background-color: rgba(250, 241, 241, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 300px;
+  opacity: 0;
+  transform: scale(0.8);
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  position: absolute;
+  margin: 10px 0; /* Ensure cards have spacing */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.card.show {
+  display: block;
+  animation-name: fadeIn;
+}
+
+.card.hide {
+  display: block;
+  animation-name: fadeOut;
+}
+
+.card h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.card p {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.cta-button {
+  font-size: 1em;
+  padding: 0.75em 1.5em;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0.25em;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-toggle {
+  display: none;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  text-align: center;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-menu li {
+  margin: 0 10px;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.navbar-menu a:hover {
+  background-color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu li {
+    margin: 0;
+  }
+
+  .video-container {
+    height: 50vh; /* Maintain the video height at 50% of viewport height */
+  }
+
+  .card-container {
+    top: 50%; /* Ensure cards area stays within the video */
+  }
+}

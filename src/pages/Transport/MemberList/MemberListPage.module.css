@@ -1,0 +1,90 @@
+.memberListPage {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.backBtn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.backBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Table Wrapper for Scroll */
+.tableWrapper {
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.memberTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px; /* Ensures a minimum width for better readability */
+}
+
+.memberTable th,
+.memberTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.memberTable th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.memberTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.memberTable tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.noData {
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .memberTable th,
+  .memberTable td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .backBtn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .memberListPage {
+    padding: 10px;
+  }
+
+  .memberTable th,
+  .memberTable td {
+    font-size: 10px;
+    padding: 4px;
+  }
+
+  h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+}

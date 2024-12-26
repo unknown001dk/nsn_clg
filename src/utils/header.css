@@ -1,0 +1,523 @@
+/* Logo container */
+.logo {
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 85px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  box-sizing: border-box;
+  mix-blend-mode: multiply;
+  /* margin-top: 30px; */
+}
+/* Logo image */
+.logo img {
+  margin-top: 30px;
+  margin-left: 85px;
+  width: 80px;
+  height: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.logo img:hover {
+  opacity: 2; /* Make the logo fully visible on hover */
+}
+/* Center text content */
+.text-content {
+  margin-top: 30px;
+  text-align: center;
+  flex-grow: 1; /* Take up the remaining space between logo and rank section */
+}
+/* Title and paragraph styling */
+.title-1,
+.title-2,
+p {
+  margin: 0;
+}
+.card-container h1, p {
+  color: #000;
+}
+.title-1 {
+  color: #eb4e35;
+  font-weight: bold;
+  font-size: 24px;
+}
+.title-2 {
+  color: #2f7436;
+  font-weight: bold;
+  font-size: 24px;
+}
+.text-content p {
+  font-size: 16px;
+  color: black;
+}
+/* Rank Section Styling */
+.rank-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 35px;
+}
+/* Rank Content */
+.rank-content {
+  text-align: right;
+  animation: pulse 1.5s infinite;
+}
+/* Rank Title */
+.rank-title {
+  margin-right: 25px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #eb4e35;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+/* Rank Subtitle */
+.rank-subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+  letter-spacing: 1px;
+}
+/* toggle bar */
+.toggle-bar {
+  display: none;
+  color: white;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  z-index: 100;
+}
+.toggle-icon,
+.close-icon {
+  font-size: 32px;
+  color: black;
+  cursor: pointer;
+}
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Styling for marquee content */
+.scrolling-content {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #e0f2f1;
+  padding: 10px 0;
+  position: relative;
+  overflow: hidden; /* Hide any overflow from the marquee */
+}
+/* Button container styling */
+.button-container {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  z-index: 1; /* Ensure buttons are above the scrolling text */
+  background-color: #e0f2f1;
+  padding: 0 10px;
+}
+/* Marquee wrapper styling */
+.marquee-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* Marquee text styling */
+.marquee-text {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent line breaks */
+  margin-left: 70px; /* Ensure space for buttons */
+}
+.marquee-text:hover {
+  cursor: pointer;
+  color: #eb4e35;
+}
+/* Marquee button styling */
+.marquee-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+/* Button hover effect */
+.marquee-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+/* Navbar styling */
+.navbar {
+  /* position: sticky; */
+  display: block;
+  background-color: #28a745;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+/* Navbar list styling */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; /* Prevent wrapping */
+}
+/* Navbar list items styling */
+.navbar li {
+  margin: 0 15px; /* Space between navbar items */
+  position: relative;
+}
+/* Navbar links styling */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  position: relative;
+  display: inline-block;
+}
+/* Navbar link hover effect */
+.navbar a:hover {
+  background-color: #218838;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+/* Active link styling */
+.navbar a.active {
+  background-color: #1e7e34;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow for active state */
+  transform: scale(1.1);
+  position: relative; /* Required for ::before to work properly */
+}
+/* Animation for navbar links on hover */
+.navbar a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #fff; /* Underline color */
+  transition: width 0.4s ease, left 0.4s ease;
+  transform: translateX(-50%);
+}
+/* Underline effect on hover */
+.navbar a:hover::before {
+  width: 100%;
+  left: 10;
+}
+/* Permanent underline for the active link */
+.navbar a.active::before {
+  width: 100%;
+  left: 10;
+}
+@media (min-width: 1024px) and (max-width: 1266px) {
+  /* Navbar styling */
+  .navbar li {
+    margin: 0 8px; /* Adjust spacing to fit items */
+  }
+  /* Navbar links styling */
+  .navbar a {
+    font-size: 14px; /* Adjust font size */
+    padding: 8px 10px; /* Adjust padding */
+    border-radius: 5px;
+  }
+}
+/* Ensuring navbar content remains in one line for widths 1055px and below */
+@media (max-width: 1024px) {
+  .logo img {
+    margin-left: 10px;
+  }
+  .text-content p {
+    font-size: 12px;
+  }
+  .rank-title {
+    font-size: 18px;
+  }
+  .rank-subtitle {
+    font-size: 18px;
+  }
+  .navbar ul {
+    flex-wrap: nowrap;
+  }
+  .navbar li {
+    margin: 0 4px;
+  }
+  .navbar a {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .close-icon {
+    display: none;
+  }
+  /* toggle bar content */
+  .toggle-bar {
+    display: flex;
+  }
+  .card-container {
+    display: none !important; /* Ensure the card content is hidden below 775px */
+  }
+  .logo {
+    /* flex-wrap: wrap; */
+    align-items: center;
+    text-align: center;
+  }
+  .logo img {
+    position: relative;
+    top: 0px;
+    margin-left: 25px;
+  }
+  .text-content {
+    position: relative;
+    top: 60px;
+    /* font-size: 50px; */
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .text-content p {
+    font-size: 20px;
+  }
+  .rank-title {
+    font-size: 22px;
+  }
+  .rank-subtitle {
+    font-size: 24px;
+  }
+  .rank-section {
+    margin-left: 10px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .navbar ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar li {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  .navbar a {
+    font-size: 14px;
+    padding: 10px 15px;
+    color: #333;
+  }
+  .navbar a:hover {
+    background-color: #28a745;
+  }
+  .marquee-wrapper {
+    overflow: hidden;
+  }
+  .marquee-text {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  .marquee-button {
+    font-size: 10px;
+    padding: 4px 8px;
+    width: auto;
+  }
+  /* Compress the entire marquee container */
+  .scrolling-content {
+    padding: 5px 0;
+  }
+  .button-container {
+    margin-left: -20px;
+  }
+  .marquee-container {
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  /* .logo {
+    position: absolute;
+    top: 0;
+    left: 100px;
+  } */
+
+   .marquee-text {
+    margin-top: 20px;
+    font-size: 10px;
+    padding: 0 2px;
+   }
+
+  .video-container {
+    height: 40%;
+  }
+  .logo img {
+    position: absolute;
+    top: -34px;
+    left: 10px;
+    margin-left: 5px;
+    width: 60px;
+  }
+  .text-content h1 {
+    /* margin-top: 30px; */
+    font-size: 20px;
+    position: relative;
+  }
+  header .text-content p {
+    display: none;
+  }
+  .rank-title {
+    font-size: 18px;
+  }
+  .rank-subtitle {
+    font-size: 18px;
+  }
+  .scrolling-content {
+    background-color: white;
+    /* margin-top: -10px; */
+  }
+  .button-container {
+    background-color: #e0f2f1;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    width: 100%;
+    padding: 5px;
+  }
+  .marquee-button {
+    font-size: 10px;
+    padding: 4px 8px;
+    width: auto;
+  }
+  .marquee-wrapper {
+    margin-top: 55px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .marquee-text {
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: nowrap;
+    width: 100%;
+    margin-left: 10px;
+  }
+}
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #ffffffe6;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  transform: translateX(0); /* By default, sidebar is visible */
+  z-index: 1100;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 15px;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  padding: 10px;
+  border-radius: 4px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+  background-color: #4caf50; /* Same hover color as navbar */
+  color: #fff;
+}
+
+.sidebar-nav a.active {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.close-sidebar {
+  cursor: pointer;
+  font-size: 30px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.close-sidebar:hover {
+  color: #4caf50;
+}
+
+.navbar ul li .active-link {
+  color: #fff;
+  background-color: #008000; /* Your green color */
+  font-weight: bold;
+}
