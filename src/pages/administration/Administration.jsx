@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Administration.css";
-import { adminSections } from "../../data/adminData";
+import { adminSections } from "../../data/adminData.js";
 
 const Administration = () => {
   const [selectedMember, setSelectedMember] = useState(null);

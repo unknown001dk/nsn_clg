@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { departments } from "../../data/departmentsData";
+import { departments } from "../../data/departmentsData.js";
 import "./DepartmentPage.css";
 
 const DepartmentPage = () => {

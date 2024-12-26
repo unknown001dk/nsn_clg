@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import styles from "./MemberListPage.module.css";
-import { IsUserLoggedIn } from "../../../utils/checkUser";
+import { IsUserLoggedIn } from "../../../utils/checkUser.js";
 
 const MemberListPage = () => {
   IsUserLoggedIn();

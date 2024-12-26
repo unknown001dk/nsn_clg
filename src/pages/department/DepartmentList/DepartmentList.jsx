@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./DepartmentList.css"; // Import the CSS file
-import { departmentInfo } from "../../../data/departments";
+import { departmentInfo } from "../../../data/departments.js";
 
 const DepartmentList = () => {
   return (

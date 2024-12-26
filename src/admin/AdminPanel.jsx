@@ -4,7 +4,7 @@ import RouteChangeRequest from "./RouteChange/RouteChangeRequest";
 import Member from "./Memberlist/MemberList";
 import BusCard from "../pages/Transport/BusCard/BusCard";
 import RequestListPage from "./RequestListPage/RequestListPage";
-import { IsUserLoggedIn } from "../utils/checkUser";
+import { IsUserLoggedIn } from "../utils/checkUser.js";
 import RouteForm from "../components/RouteForm/RouteForm";
 
 function AdminPanel() {

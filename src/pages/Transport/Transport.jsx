@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./styles/header.css"; // Assuming you're styling the header here
 import Header from "./components/Header";
 

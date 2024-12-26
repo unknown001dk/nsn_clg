@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLocation, useParams, useNavigate } from "react-router-dom";
 import styles from "./styles/BusDetailsPage.module.css";
 import { motion } from "framer-motion";
-import { sampleData } from "../../data/BusDetails";
+import { sampleData } from "../../data/BusDetails.js";
 import { FaUser, FaPhone, FaCaretDown, FaCaretUp } from "react-icons/fa";
 import AdminPanel from "../../admin/AdminPanel";
 

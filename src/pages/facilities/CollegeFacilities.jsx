@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./CollegeFacilities.css";
-import { facilities } from "../../data/facilities";
+import { facilities } from "../../data/facilities.js";
 
 const CollegeFacilities = () => {
   const [isModalOpen, setModalOpen] = useState(false);
