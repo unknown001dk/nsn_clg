@@ -1,4 +1,4 @@
-export const departments = {
+export const departmentsData = {
   "Mechanical Engineering": {
     description: `The department was established in 2011...`,
     image: "https://via.placeholder.com/300",

@@ -1,11 +1,11 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { departments } from "../../data/departmentsData.js";
+import { departmentsData } from "../../data/departmentsData.js";
 import "./DepartmentPage.css";
 
 const DepartmentPage = () => {
   const { departmentName } = useParams(); // Get department name from the URL
-  const department = departments[departmentName];
+  const department = departmentsData[departmentName];
 
   if (!department) {
     return (
