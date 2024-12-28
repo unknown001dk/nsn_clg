@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/admin-pannel",
+      "destination": "/admin-panel",
+      "permanent": true
+    }
+  ],
+  "env": {
+    "REACT_APP_API_URL": "https://api.example.com",
+    "REACT_APP_ENV": "production"
+  }
+}
